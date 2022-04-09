@@ -1,0 +1,92 @@
+.modal-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(11, 36, 52, 0.5);
+    z-index: 1000;
+  }
+  
+.modal-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: 400px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.modal-close-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modal-button, .modal-close {
+    font-family: 'Karla', sans-serif;  
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.modal-close {
+    background-color: white;
+    border: none;
+    color: #2B283A;
+    cursor: pointer;
+}
+
+.won-message {
+    margin: 0 0 10px 0;
+    text-align: center;
+    color: #2B283A;
+}
+
+.stats {
+    padding: 15px 0;
+}
+
+.stats-text {
+    margin: 2px 0;
+    font-weight: 400;
+    color: #4A4E74;
+}
+
+.stats-value {
+    margin: 0;
+    color: #2B283A;
+}
+
+.divider {
+    margin: 0;
+    padding: 10px 5px;
+}
+
+.best-score {
+    margin: 0 0 7px;
+    color: #2B283A;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.modal-button {
+    width: 130px;
+    height: 50px;
+    border: none;
+    border-radius: 7px;
+    margin-top: 10px;
+    color: white;
+    background-color: #5035FF;
+    cursor: pointer;
+}
+
+.modal-button:active {
+    box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}

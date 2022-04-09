@@ -1,18 +1,21 @@
 import React from "react";
+import './Die.css';
 
 export default function Die(props) {
-    // function freeze() {
-    //     frozen = !frozen;
-    //     props.frozen = frozen;
-    //     props.value = value;
-    // }
+    const classes = `die ${props.isHeld? "held-button" : ""}`
+
+    let dots = [];
+
+    for (let i = 0; i < props.value; i++) {
+        dots.push(<span key={i} className="dot"></span>);
+    }
 
     return (
         <div 
-            className={`die ${props.isHeld? "held-button" : ""}`} 
+            className={classes} 
             onClick={props.holdDice}    
         >
-            <h2>{props.value}</h2>
+            {dots}
         </div>
     )
 }
